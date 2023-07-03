@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <a href="index.html">Home<br></a>
+
+  <title>Document</title>
+  <script>
+    function adicionarNoInicio() {
+      var animais = ["gato", "cachorro", "pássaro"];
+      var novoAnimal = "coelho";
+
+      // Exibir o array original
+      var arrayOriginal = document.getElementById("array-original");
+      arrayOriginal.textContent = "Array original: " + JSON.stringify(animais);
+
+      // Adicionar um elemento no início do array
+      animais.unshift(novoAnimal);
+
+      // Exibir o array atualizado
+      var arrayAtualizado = document.getElementById("array-atualizado");
+      arrayAtualizado.textContent = "Array atualizado: " + JSON.stringify(animais);
+    }
+  </script>
+</head>
+<body>
+  <h1>Adicionar Elemento no Início do Array</h1>
+
+  <button onclick="adicionarNoInicio()">Adicionar no Início</button>
+
+  <p id="array-original"></p>
+  <p id="array-atualizado"></p>
+</body>
+</html>

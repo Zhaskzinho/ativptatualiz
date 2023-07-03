@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <a href="index.html">Home<br></a>
+
+  <title>Document</title>
+  <script>
+    function encontrarIndice() {
+      var letras = ["a", "b", "c", "d", "e"];
+      var elementoProcurado = "a";
+
+      
+      var indice = letras.indexOf(elementoProcurado);
+
+      
+      var resultado = document.getElementById("resultado");
+      resultado.textContent = "O índice de '" + elementoProcurado + "' é: " + indice;
+    }
+  </script>
+</head>
+<body>
+  <h1>Encontrar Índice de Elemento em um Array</h1>
+
+  <button onclick="encontrarIndice()">Encontrar Índice</button>
+
+  <p id="resultado"></p>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <a href="index.html">Home<br></a>
+    
+  <title>Document</title>
+</head>
+<body>
+  <h1>Saudação Personalizada</h1>
+  <p id="saudacao"></p>
+
+  <script>
+    function saudacao(nome, outro) {
+      var saudacao = "Olá " + outro + " tudo bem!<br>Me chamo " + nome + ".<br>Até logo!";
+      document.getElementById("saudacao").innerHTML = saudacao;
+    }
+
+    saudacao("Lara", "Rafa");
+  </script>
+</body>
+</html>

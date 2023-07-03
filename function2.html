@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <a href="index.html">Home<br></a>
+
+  <title>Document</title>
+</head>
+<body>
+  <h1>Imprimir Soma</h1>
+  <p id="resultado"></p>
+
+  <script>
+    function imprimirSoma(numero1, numero2) {
+      var soma = numero1 + numero2;
+      var valores = "Valores: " + numero1 + " e " + numero2;
+      document.getElementById("resultado").innerHTML = valores + "<br>A soma dos números é: " + soma;
+    }
+
+    imprimirSoma(2, 4);
+  </script>
+</body>
+</html>

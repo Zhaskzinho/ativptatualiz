@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <a href="index.html">Home<br></a>
+
+  <title>Document</title>
+  <script>
+    function copiarArray() {
+     
+      const arrayOriginal = [1, 2, 3, 4, 5];
+
+      
+      let arrayCopia = [];
+
+      
+      [...arrayCopia] = arrayOriginal;
+
+      
+      var arrayOriginalElement = document.getElementById("array-original");
+      arrayOriginalElement.textContent = "Array original: " + arrayOriginal.join(", ");
+
+      
+      var arrayCopiaElement = document.getElementById("array-copia");
+      arrayCopiaElement.textContent = "Array de cópia: " + arrayCopia.join(", ");
+    }
+  </script>
+</head>
+<body>
+
+  <h1>Copiar Elementos com Desestruturação</h1>
+
+  <button onclick="copiarArray()">Copiar Array</button>
+
+  <p id="array-original"></p>
+  <p id="array-copia"></p>
+</body>
+</html>

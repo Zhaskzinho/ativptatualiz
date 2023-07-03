@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <a href="index.html">Home<br></a>
+
+  <title>Document</title>
+
+  <script>
+
+    function removerUltimoElemento() {
+      var cores = ["vermelho", "azul", "verde", "amarelo"];
+
+     
+      var arrayOriginal = document.getElementById("array-original");
+      arrayOriginal.textContent = "Array original: " + JSON.stringify(cores);
+
+    
+      var ultimoElemento = cores.pop();
+
+      
+      var elementoRemovido = document.getElementById("elemento-removido");
+      elementoRemovido.textContent = "Elemento removido: " + ultimoElemento;
+
+      
+      var arrayAtualizado = document.getElementById("array-atualizado");
+      arrayAtualizado.textContent = "Array atualizado: " + JSON.stringify(cores);
+    }
+
+  </script>
+  
+</head>
+<body>
+  <h1>Remover Último Elemento do Array</h1>
+
+  <button onclick="removerUltimoElemento()">Remover Último Elemento</button>
+
+  <p id="array-original"></p>
+  <p id="elemento-removido"></p>
+  <p id="array-atualizado"></p>
+</body>
+</html>

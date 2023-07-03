@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <a href="index.html">Home<br></a>
+
+  <title>Document</title>
+</head>
+<body>
+  <h1>Contagem de Elementos</h1>
+  
+  <button onclick="contarElementos()">Contar</button>
+  
+  <p id="resultado"></p>
+
+  <script>
+    function contarElementos() {
+      var array = [1, 2, 3, 4, 5];
+      
+      var quantidade = array.length;
+      
+      document.getElementById("resultado").textContent = "Quantidade de elementos: " + quantidade;
+    }
+  </script>
+</body>
+</html>
